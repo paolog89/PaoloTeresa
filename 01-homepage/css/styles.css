@@ -37,6 +37,10 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
+.modal-backdrop.show {
+    opacity: 1;
+}
+
 html{ font-size: 100%; height: 100%; overflow-x: hidden;margin: 0px;  padding: 0px; touch-action: manipulation; }
 
 
