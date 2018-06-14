@@ -184,22 +184,22 @@ b.light-color{ color: #444; }
 3. MENU
 --------------------------------- */
 
-header{ position: absolute; left: 0; right: 0; top: 20px; z-index: 1000; font-size: .95em; 
-	border-bottom: 1px solid rgba(255,255,255, .2); color: #fff; }
+header{ position: absolute; left: 0; right: 0; top: 10px; z-index: 1000; font-size: .95em; 
+	border-bottom: 1px solid rgba(255,255,255, .2); color: #fff; background-color: rgba(0, 0, 0, 0.5); }
 
 	
 /* MIDDLE AREA */
 
-header .logo{ margin: 5px 0 20px; height: 40px; }
+header .logo{ margin: 10px 0 20px; height: 40px; }
 
 header .logo img{ height: 100%; width: auto; }
 
 
 /* BOTTOM AREA */
 
-header .main-menu{ font-weight: 500; float: right; margin: 0px -15px; }
+header .main-menu{ font-weight: 500; float: right; margin: 15px -15px; }
 
-header .main-menu > li > a{ height: 50px; line-height: 46px; padding: 0 15px; border: 2px solid transparent; 
+header .main-menu > li > a{ height: 40px; line-height: 36px; padding: 0 5px; border: 2px solid transparent; 
 	border-radius: 2px; background: transparent; }
 
 header .visible.main-menu{ display: block; }
