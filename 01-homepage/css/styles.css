@@ -184,7 +184,7 @@ b.light-color{ color: #444; }
 3. MENU
 --------------------------------- */
 
-header{ position: absolute; left: 0; right: 0; top: 10px; z-index: 1000; font-size: .95em; 
+header{ position: absolute; left: 0; right: 0; top: 0px; z-index: 1000; font-size: .95em; 
 	border-bottom: 1px solid rgba(255,255,255, .2); color: #fff; background-color: rgba(0, 0, 0, 0.5); }
 
 	
