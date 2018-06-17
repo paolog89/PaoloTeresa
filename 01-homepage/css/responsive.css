@@ -66,7 +66,7 @@
 	/* BOTTOM AREA */
 	
 	header .main-menu{ text-align: left; display: none; float: none; clear: both; max-height: 400px;
-		overflow: auto; border-top: 1px solid #ccc; background: #333; }
+		overflow: auto; border-top: 1px solid #ccc; background: rgba(0, 0, 0, 0.5); }
 	
 	header .main-menu > li{ display: block; float: none; border-bottom: 1px solid #444; }
 	
