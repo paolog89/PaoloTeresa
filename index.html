@@ -34,7 +34,7 @@
 
 <div class="container">
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal" id="myModal" role="dialog">
     <div class="modal-dialog modal-dialog-centered">
 
       <!-- Modal content-->
@@ -72,7 +72,7 @@
 		<p>Se preferite contribuire alla nostra nuova vita insieme e alla nostra futura famiglia</p>
 		<p><a class="border-btn" href="https://goo.gl/forms/XCnbk4b546H5peQF2" target="_blank">Lista Nozze</a></p>
 		<p><br></p>
-		<p>IBAN: IT... <br>Intestatario: Paolo Giannandrea</p>
+		<p>IBAN: IT09U 02008 32974 001232626339 <br>Intestatario: Paolo Giannandrea</p>
       </div>
     </div>
 
@@ -110,8 +110,8 @@
 				<li><a href="#OurStory" data-nav-menu="#main-menu">La Nostra Storia</a></li>
 				<li><a href="#TheWedding" data-nav-menu="#main-menu">Il Matrimonio</a></li>
 				<li><a href="#Gallery" data-nav-menu="#main-menu">Galleria</a></li>
-				<li><a data-toggle="modal" data-backdrop="false" href="" data-target="#Lista" data-nav-menu="#main-menu">Lista Nozze</a></li>
-				<li><a data-toggle="modal" data-backdrop="false" href="" data-target="#Luna" data-nav-menu="#main-menu">Luna Di Miele</a></li>
+				<li><a data-toggle="modal" data-backdrop="true" href="" data-target="#Lista" data-nav-menu="#main-menu">Lista Nozze</a></li>
+				<li><a data-toggle="modal" data-backdrop="true" href="" data-target="#Luna" data-nav-menu="#main-menu">Luna Di Miele</a></li>
 			</ul>
 
 		</div>
@@ -404,8 +404,8 @@
 				<li><a href="#OurStory">La Nostra Storia</a></li>
 				<li><a href="#TheWedding">Il Matrimonio</a></li>
 				<li><a href="#Gallery">Galleria</a></li>
-				<li><a data-toggle="modal" data-backdrop="false" href="#Lista">Lista Nozze</a></li>
-				<li><a data-toggle="modal" data-backdrop="false" href="#Luna">Luna Di Miele</a></li>
+				<li><a data-toggle="modal" data-backdrop="true" href="" data-target="#Lista" data-nav-menu="#main-menu">Lista Nozze</a></li>
+				<li><a data-toggle="modal" data-backdrop="true" href="" data-target="#Luna" data-nav-menu="#main-menu">Luna Di Miele</a></li>
 				<!-- <li><a href="ListaNozze.html">Lista Nozze</a></li>
 				<li><a href="LunaDiMiele.html">Luna Di Miele</a></li> -->
 			</ul>
@@ -436,12 +436,15 @@ Copyright &copy; All rights reserved | This template is made with <i class="icon
 
 	<script src="common-js/scripts.js"></script>
 
-<!--   	<script type="text/javascript">
+   	<script type="text/javascript">
      $(window).on('load',function(){
         $('#myModal').modal(({
 		backdrop: "static",
 		keyboard: false}));
     });
-	</script> -->
+	$("#myModal").on("shown.bs.modal", function(){
+      $('.modal-backdrop.show').css('opacity', '1');
+});
+	</script>
 </body>
 </html>

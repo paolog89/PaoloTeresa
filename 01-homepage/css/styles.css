@@ -37,12 +37,9 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
-.modal-backdrop.show {
-    opacity: 1;
-}
-
 body.modal-open {
-    overflow: visible;
+    overflow: visible; 
+	padding-right: 0px !important;
 }
 
 a:focus { outline: none }
