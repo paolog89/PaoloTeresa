@@ -1,6 +1,6 @@
 	function Password() {
 		var x = document.forms["myForm"]["pwd"].value;
-		if (x == "gioco"||x == "Gioco") {
+		if (x == "rebus"||x == "Rebus"||x == "REBUS") {
 			$('#myModal').modal('hide');
 			return false;
 		}
